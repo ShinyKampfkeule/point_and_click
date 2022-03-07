@@ -1,6 +1,6 @@
-import markerBeach from "../images/Strand-Marker.svg"
-import markerForest from "../images/Wald-Marker.svg"
-import markerMountain from "../images/Berg-Marker.svg"
+import markerBeach from "../../images/Strand-Marker.svg"
+import markerForest from "../../images/Wald-Marker.svg"
+import markerMountain from "../../images/Berg-Marker.svg"
 import {useNavigate} from "react-router-dom";
 
 export default function WorldmapMarker ({type}) {
