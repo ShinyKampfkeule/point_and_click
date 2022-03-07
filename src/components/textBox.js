@@ -1,6 +1,6 @@
 import {useNavigate} from "react-router-dom"
 
-import mapIcon from "../../public/images/maps.png"
+import mapIcon from "../images/maps.png"
 
 export default function TextBox ({type}) {
   const navigate = useNavigate()

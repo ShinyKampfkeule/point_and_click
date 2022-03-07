@@ -1,5 +1,6 @@
 :root {
   --envDisplayColor: red;
+  --turtleBrightness: 0.05;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -245,6 +246,11 @@
   left: 32vw;
   height: 20vh;
   width: 5.5vw;
+  filter: brightness(var(--turtleBrightness));
+}
+
+.imageSchildkröte:hover {
+  filter: brightness(1);
 }
 
 .imageSchildkröteSmall {

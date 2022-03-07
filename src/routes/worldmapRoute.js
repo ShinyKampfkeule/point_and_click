@@ -1,10 +1,9 @@
-import backgroundImage from "../../public/images/IslandWorldMap.png";
+import backgroundImage from "../images/IslandWorldMap.png";
 import EnvDisplay from "../components/environmentalDisplay";
 import WorldmapMarker from "../components/worldmapMarker";
 
 export default function WorldMap () {
   var beach, forest, mountain
-  console.log(localStorage.getItem('beachLock'))
   if (localStorage.getItem('beachLock') === 'false') {
     beach = <WorldmapMarker type="beach" />
   }

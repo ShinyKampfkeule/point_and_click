@@ -1,4 +1,4 @@
-import icon from "../../public/images/environment.png"
+import icon from "../images/environment.png"
 
 export default function EnvDisplay () {
   if (localStorage.getItem('envValue') < 25) {

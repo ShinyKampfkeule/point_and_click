@@ -1,12 +1,15 @@
-import icon from "../../public/images/Icon awesome-exclamation.png"
-import turtle from "../../public/images/SchildkröteTrans.png"
-import seastar from "../../public/images/SeesternTrans.png"
-import octo from "../../public/images/OctopusTrans.png"
+import icon from "../images/Icon awesome-exclamation.png"
+import turtle from "../images/SchildkröteTrans.png"
+import seastar from "../images/SeesternTrans.png"
+import octo from "../images/OctopusTrans.png"
 
 export default function AnimalImage ({animal}) {
   let questIcon
   switch (animal) {
     case "Schildkröte":
+      if (localStorage.getItem('turtleFirstTalk') === "false") {
+        document.documentElement.style.setProperty("--turtleBrightness", 1)
+      }
       if (localStorage.getItem('turtleQuest') === "true" ) {
         questIcon = <img src={icon} alt="Ausrufezeichen" className="imageAusrufezeichen" />
       }

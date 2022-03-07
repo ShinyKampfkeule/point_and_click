@@ -1,4 +1,4 @@
-import backgroundImage from "../../public/images/IslandWorldMap.png"
+import backgroundImage from "../images/IslandWorldMap.png"
 import {useNavigate} from "react-router-dom";
 
 export default function Start () {
