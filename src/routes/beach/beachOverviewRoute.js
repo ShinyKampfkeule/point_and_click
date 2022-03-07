@@ -1,6 +1,6 @@
-import backgroundImage from "../../images/Strand.png"
-import AnimalImage from "../../components/animalImage"
+import backgroundImage from "../../../public/images/Strand.png"
 
+import AnimalImage from "../../components/animalImage"
 import TextBox from "../../components/textBox"
 
 export default function BeachOverview () {

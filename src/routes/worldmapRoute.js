@@ -1,4 +1,4 @@
-import backgroundImage from "../images/IslandWorldMap.png";
+import backgroundImage from "../../public/images/IslandWorldMap.png";
 import EnvDisplay from "../components/environmentalDisplay";
 import WorldmapMarker from "../components/worldmapMarker";
 

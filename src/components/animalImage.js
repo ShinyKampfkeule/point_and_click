@@ -1,7 +1,7 @@
-import icon from "../images/Icon awesome-exclamation.png"
-import turtle from "../images/SchildkröteTrans.png"
-import seastar from "../images/SeesternTrans.png"
-import octo from "../images/OctopusTrans.png"
+import icon from "../../public/images/Icon awesome-exclamation.png"
+import turtle from "../../public/images/SchildkröteTrans.png"
+import seastar from "../../public/images/SeesternTrans.png"
+import octo from "../../public/images/OctopusTrans.png"
 
 export default function AnimalImage ({animal}) {
   let questIcon
