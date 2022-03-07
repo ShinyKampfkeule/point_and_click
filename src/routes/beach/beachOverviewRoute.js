@@ -17,7 +17,7 @@ export default function BeachOverview () {
   return (
     <>
       <img src={backgroundImage} alt="Strand Hintergrund" className="fullBackgroundImage" />
-      <TextBox type="small"></TextBox>
+      <TextBox type="small" />
       {turtle}
       {seastar}
       {octo}
