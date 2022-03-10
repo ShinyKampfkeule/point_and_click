@@ -6,21 +6,23 @@ import {useNavigate} from "react-router-dom";
 export default function WorldmapMarker ({type}) {
   const navigate = useNavigate()
   function switchRoute() {
-    navigate(`../${type}`)
+    navigate(`../${type}`, {state: {
+      place: type
+    }})
   }
-  if (type === "beach") {
+  if (type === "Beach") {
     return (
       <div onClick={switchRoute}>
         <img src={markerBeach} alt="Marker" className={`markerIcon ${type}`} />
       </div>
     )
-  } else if (type === "forest") {
+  } else if (type === "Forest") {
     return (
       <div onClick={switchRoute}>
         <img src={markerForest} alt="Marker" className={`markerIcon ${type}`} />
       </div>
     )
-  } else if (type === "mountain") {
+  } else if (type === "Mountain") {
     return (
       <div onClick={switchRoute}>
         <img src={markerMountain} alt="Marker" className={`markerIcon ${type}`} />

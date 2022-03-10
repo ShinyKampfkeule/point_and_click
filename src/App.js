@@ -3,21 +3,8 @@ import {Routes, Route, useLocation} from "react-router-dom";
 
 import Start from "./routes/startRoute";
 import WorldMap from "./routes/worldmapRoute";
-import BeachOverview from "./routes/beach/beachOverviewRoute";
 import Conversation from "./routes/ConversationRoute";
-import {screen} from "@testing-library/react";
-
-localStorage.setItem('envValue', 0)
-localStorage.setItem('beachLock', false)
-localStorage.setItem('forestLock', true)
-localStorage.setItem('mountainLock', true)
-localStorage.setItem('turtleLock', false)
-localStorage.setItem('turtleQuest', true)
-localStorage.setItem('turtleFirstTalk', true)
-localStorage.setItem('seastartLock', true)
-localStorage.setItem('seastartQuest', false)
-localStorage.setItem('octopusLock', true)
-localStorage.setItem('octopusQuest', false)
+import Overview from "./routes/overviewRoute";
 
 function App() {
   const location = useLocation()
@@ -26,7 +13,9 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Start />} />
         <Route path="/WorldMap" element={<WorldMap />} />
-        <Route path="/Beach" element={<BeachOverview />} />
+        <Route path="/Beach" element={<Overview />} />
+        <Route path="/Forest" element={<Overview />} />
+        <Route path="/Mountain" element={<Overview />} />
         <Route path="/Conversation" element={<Conversation />} />
       </Routes>
     </div>

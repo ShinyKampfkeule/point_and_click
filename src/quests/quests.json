@@ -1,0 +1,25 @@
+{
+  "turtle": {
+    "collectTrash": {
+      "tasks": {
+        "task1": "Collect all trash on the Beach !"
+      },
+      "messages": {
+        "message1": {
+          "message": "Hallo Fremder, geht es dir gut ? Das war ja eine ganz schön harte Bruchlandung von dir.",
+          "answerGood": "Wo bin ich ?",
+          "answerGoodPath": "Next",
+          "answerBad": "Wer bist du ?",
+          "answerBadPath": "Next"
+        },
+        "message2": {
+          "message": "Du bist hier auf Insel Wunderschön, mein Name ist Schildi. Es hat sich schon lange kein Mensch mehr auf diese Insel verirrt.",
+          "answerGood": "Wie komme ich wieder nach Hause ?",
+          "answerGoodPath": "Next",
+          "answerBad": "Sorry, ich muss weg und einen Weg nach Hause finden !",
+          "answerBadPath": "Leave"
+        }
+      }
+    }
+  }
+}

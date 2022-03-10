@@ -1,6 +1,16 @@
 :root {
   --envDisplayColor: red;
   --turtleBrightness: 0.05;
+  --seastarBrightness: 0.05;
+  --octopusBrightness: 0.05;
+  --deerBrightness: 0.05;
+  --foxBrightness: 0.05;
+  --squirrelBrightness: 0.05;
+  --wolfBrightness: 0.05;
+  --eagleBrightness: 0.05;
+  --stagBrightness: 0.05;
+  --backgroundColor: black;
+  --borderColor: black;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -171,7 +181,23 @@
   position: absolute;
   bottom: 0;
   margin-bottom: 1%;
-  left: calc(50vw - 12.2vw);
+  left: calc(50vw - 25.4vw);
+  border-radius: 30px;
+  background-color: rgb(118, 204, 64);
+  border: 3px solid rgb(58, 170, 53);
+  box-shadow: 0 3px 15px 6px rgb(53, 116, 113);
+  font-size: 3rem;
+  color: white;
+  font-family: Georgia, Arial, sans-serif;
+}
+
+.continueButton {
+  height: 12.4vh;
+  width: 24.4vw;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1%;
+  left: calc(50vw + 1.1vw);
   border-radius: 30px;
   background-color: rgb(118, 204, 64);
   border: 3px solid rgb(58, 170, 53);
@@ -186,19 +212,19 @@
   width: 5vw;
 }
 
-.beach {
+.Beach {
   position: absolute;
   left: 42vw;
   top: 59vh;
 }
 
-.mountain {
+.Mountain {
   position: absolute;
   left: 52vw;
   top: 14vh;
 }
 
-.forest {
+.Forest {
   position: absolute;
   left: 62vw;
   top: 54vh;
@@ -225,10 +251,10 @@
 .boxContainerSmall {
   width: calc(100vw - 16px);
   height: 6.667vh;
-  background-color: rgba(57, 192, 209, 0.8);
+  background-color: var(--backgroundColor);
   position: absolute;
   bottom: 0;
-  border: 8px solid rgb(255, 195, 122);
+  border: 8px solid var(--borderColor);
   z-index: 9001;
   display: flex;
   align-items: center;
@@ -237,10 +263,10 @@
 .boxContainerBig {
   width: calc(100% - 16px);
   height: 22.801vh;
-  background-color: rgba(57, 192, 209, 0.8);
+  background-color: var(--backgroundColor);
   position: absolute;
   bottom: 0;
-  border: 8px solid rgb(255, 195, 122);
+  border: 8px solid var(--borderColor);
   z-index: 9001;
 }
 
@@ -261,6 +287,12 @@
 
 .imageSchildkröte:hover {
   filter: brightness(1);
+  width: 6.5vw;
+  height: 21vh;
+}
+
+.imageSchildkröte:hover > .imageSchildkröteSmall {
+  width: 11.35vw;
 }
 
 .imageSchildkröteSmall {
@@ -283,6 +315,17 @@
   left: 50vw;
   height: 20vh;
   width: 5.5vw;
+  filter: brightness(var(--seastarBrightness));
+}
+
+.imageSeestern:hover {
+  filter: brightness(1);
+  width: 6.5vw;
+  height: 21vh;
+}
+
+.imageSeestern:hover > .imageSeesternSmall {
+  width: 11.84vw;
 }
 
 .imageSeesternSmall {
@@ -291,18 +334,245 @@
   bottom: 0;
 }
 
+.imageSeesternBig {
+  width: 36.602vw;
+  position: absolute;
+  left: 72vw;
+  top: 35vh;
+}
+
 .imageOctopus {
   position: absolute;
   top: 66vh;
   left: 65vw;
   height: 20vh;
   width: 5.5vw;
+  filter: brightness(var(--octopusBrightness));
+}
+
+.imageOctopus:hover {
+  filter: brightness(1);
+  width: 6.5vw;
+  height: 21vh;
+}
+
+.imageOctopus:hover > .imageOctopusSmall {
+  width: 10.12vw;
 }
 
 .imageOctopusSmall {
   width: 9.12vw;
   position: absolute;
   bottom: 0;
+}
+
+.imageOctopusBig {
+  width: 36.602vw;
+  position: absolute;
+  left: 72vw;
+  top: 32vh;
+}
+
+.imageDeer {
+  position: absolute;
+  top: 52vh;
+  left: 60vw;
+  height: 23vh;
+  width: 8vw;
+  transform: scaleX(-1);
+  filter: brightness(var(--deerBrightness));
+}
+
+.imageDeer:hover {
+  filter: brightness(1);
+  width: 9vw;
+  height: 24vh;
+}
+
+.imageDeer:hover > .imageDeerSmall {
+  width: 13vw;
+}
+
+.imageDeerSmall {
+  width: 12vw;
+  position: absolute;
+  bottom: 0;
+}
+
+.imageDeerBig {
+  width: 45vw;
+  position: absolute;
+  left: 74vw;
+  top: 30vh;
+  transform: scaleX(-1);
+}
+
+.imageFox {
+  position: absolute;
+  top: 63vh;
+  left: 41vw;
+  height: 20vh;
+  width: 7.5vw;
+  transform: scaleX(-1);
+  filter: brightness(var(--foxBrightness));
+}
+
+.imageFox:hover {
+  filter: brightness(1);
+  width: 8.5vw;
+  height: 21vh;
+}
+
+.imageFox:hover > .imageFoxSmall {
+  width: 11vw;
+}
+
+.imageFoxSmall {
+  width: 10vw;
+  position: absolute;
+  bottom: 0;
+}
+
+.imageFoxBig {
+  width: 45vw;
+  position: absolute;
+  left: 75vw;
+  top: 30vh;
+  transform: scaleX(-1);
+}
+
+.imageSquirrel {
+  position: absolute;
+  top: 32vh;
+  left: 23vw;
+  height: 18vh;
+  width: 5.5vw;
+  filter: brightness(var(--squirrelBrightness));
+}
+
+.imageSquirrel:hover {
+  filter: brightness(1);
+  width: 6.5vw;
+  height: 19vh;
+  top: 31vh;
+}
+
+.imageSquirrel:hover > .imageSquirrelSmall {
+  width: 10vw;
+}
+
+.imageSquirrelSmall {
+  width: 9.12vw;
+  position: absolute;
+  bottom: 0;
+}
+
+.imageSquirrelBig {
+  width: 36.602vw;
+  position: absolute;
+  left: 72vw;
+  top: 32vh;
+  transform: scaleX(-1);
+}
+
+.imageWolf {
+  position: absolute;
+  top: 68vh;
+  left: 50vw;
+  height: 23vh;
+  width: 9vw;
+  filter: brightness(var(--wolfBrightness));
+}
+
+.imageWolf:hover {
+  filter: brightness(1);
+  width: 9.5vw;
+  height: 24vh;
+}
+
+.imageWolf:hover > .imageWolfSmall {
+  width: 13vw;
+}
+
+.imageWolfSmall {
+  width: 12vw;
+  position: absolute;
+  bottom: 0;
+}
+
+.imageWolfBig {
+  width: 45vw;
+  position: absolute;
+  left: 74vw;
+  top: 30vh;
+  transform: scaleX(-1);
+}
+
+.imageEagle {
+  position: absolute;
+  top: 40vh;
+  left: 77vw;
+  height: 20vh;
+  width: 7vw;
+  transform: scaleX(-1);
+  filter: brightness(var(--eagleBrightness));
+}
+
+.imageEagle:hover {
+  filter: brightness(1);
+  width: 7.5vw;
+  height: 21vh;
+}
+
+.imageEagle:hover > .imageEagleSmall {
+  width: 13vw;
+}
+
+.imageEagleSmall {
+  width: 12vw;
+  position: absolute;
+  bottom: 0;
+}
+
+.imageEagleBig {
+  width: 45vw;
+  position: absolute;
+  left: 72vw;
+  top: 30vh;
+  transform: scaleX(-1);
+}
+
+.imageStag {
+  position: absolute;
+  top: 54vh;
+  left: 17.5vw;
+  height: 29vh;
+  width: 10vw;
+  filter: brightness(var(--stagBrightness));
+}
+
+.imageStag:hover {
+  filter: brightness(1);
+  width: 11vw;
+  height: 30vh;
+}
+
+.imageStag:hover > .imageStagSmall {
+  width: 16vw;
+}
+
+.imageStagSmall {
+  width: 15vw;
+  position: absolute;
+  bottom: 0;
+}
+
+.imageStagBig {
+  width: 45vw;
+  position: absolute;
+  left: 74vw;
+  top: 26vh;
+  transform: scaleX(-1);
 }
 
 .spanText {
@@ -332,7 +602,7 @@
   position: absolute;
   width: 30vw;
   height: 100%;
-  border-left: 8px solid rgb(255, 195, 122);
+  border-left: 8px solid var(--borderColor);
   bottom: 0;
   right: 0;
   display: flex;
@@ -341,8 +611,8 @@
 }
 
 .answerButton {
-  background-color: rgb(57, 214, 233);
-  border: 8px solid rgb(255, 195, 122);
+  background-color: var(--backgroundColor);
+  border: 8px solid var(--borderColor);
   width: 13.594vw;
   height: 13.62vh;
   font-size: 3rem;
